@@ -3,12 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>イラストギャラリー</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <style>
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .gallery-container {
+      width: 100%;
+    }
+
     .gallery-container .tag-gallery {
       margin-bottom: 2rem;
     }
@@ -25,25 +33,13 @@
     .gallery-container p {
       margin-bottom: 1rem;
     }
-
-    .gallery-container .row {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    .gallery-container .column {
-      padding-left: 0.25rem;
-      padding-right: 0.25rem;
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <h1>イラストギャラリー</h1>
-    <div class="gallery-container">
-      <div class="row"></div>
-    </div>
+    <div class="gallery-container"></div>
   </div>
   <script src="illustgallery.js"></script>
 </body>
